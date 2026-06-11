@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Campaign workspace - TikTok Ads Manager</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="app-shell">
+  <!-- Top Navigation -->
+  <header class="top-nav">
+    <div class="nav-left">
+      <button class="apps-btn" title="Apps">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <circle cx="5" cy="5" r="1.6"/><circle cx="12" cy="5" r="1.6"/><circle cx="19" cy="5" r="1.6"/>
+          <circle cx="5" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="19" cy="12" r="1.6"/>
+          <circle cx="5" cy="19" r="1.6"/><circle cx="12" cy="19" r="1.6"/><circle cx="19" cy="19" r="1.6"/>
+        </svg>
+      </button>
+      <div class="user-avatar">Y</div>
+      <div class="brand">
+        <span class="brand-tiktok">TikTok</span>
+        <span class="brand-sep">|</span>
+        <span class="brand-sub">Ads Manager</span>
+      </div>
+    </div>
+    <div class="nav-right">
+      <button class="icon-btn" title="Search">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/>
+        </svg>
+      </button>
+      <button class="icon-btn notify" title="Notifications">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 16v-5a6 6 0 1 0-12 0v5l-2 2h16l-2-2z"/><path d="M10 20a2 2 0 0 0 4 0"/>
+        </svg>
+        <span class="dot"></span>
+      </button>
+      <button class="icon-btn" title="Help">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .8-1 1.7"/><circle cx="12" cy="17" r=".8" fill="currentColor"/>
+        </svg>
+      </button>
+      <div class="account-select">
+        <span>upstream.land</span>
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="lang-toggle" data-role="lang-toggle" role="group" aria-label="Language">
+        <button class="lang-opt active" data-lang="en" type="button">EN</button>
+        <button class="lang-opt" data-lang="zh" type="button">中</button>
+      </div>
+      <button class="wallet-btn" title="Wallet">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="6" width="18" height="13" rx="2"/><path d="M16 12h2"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="app-body">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <nav>
+        <button class="side-item" title="Home">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+        </button>
+        <button class="side-item active" title="Campaign">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h12l4 4v12H4z"/><path d="M4 9h16"/></svg>
+        </button>
+        <button class="side-item" title="Library">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h6v14H4z"/><path d="M14 5h6v14h-6z"/></svg>
+        </button>
+        <button class="side-item" title="Reporting">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19h16"/><path d="M7 15v-4"/><path d="M12 15V7"/><path d="M17 15v-6"/></svg>
+        </button>
+        <button class="side-item" title="Assets">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M8 7V5h8v2"/></svg>
+        </button>
+        <button class="side-item" title="Audience">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+        </button>
+        <button class="side-item" title="Shop">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16l-1.5 12h-13z"/><path d="M8 7a4 4 0 1 1 8 0"/></svg>
+        </button>
+        <button class="side-item" title="More">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><circle cx="6" cy="12" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="18" cy="12" r="1.6"/></svg>
+        </button>
+      </nav>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <div class="main-header">
+        <h1>Campaign List</h1>
+        <button class="header-refresh" title="Refresh">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12a8 8 0 0 1 13.6-5.7L21 9"/><path d="M21 4v5h-5"/><path d="M20 12a8 8 0 0 1-13.6 5.7L3 15"/><path d="M3 20v-5h5"/></svg>
+        </button>
+        <div class="create-group" data-role="create-group">
+          <button class="btn-create">Create</button>
+          <button class="btn-create-caret" data-role="create-caret" title="Import options" aria-haspopup="true" aria-expanded="false">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <ul class="create-menu" data-role="create-menu" hidden>
+            <li data-action="import-csv">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M9 14h6M9 17h6"/></svg>
+              <div class="create-menu-text">
+                <div class="create-menu-title">Import CSV</div>
+                <div class="create-menu-sub">Bulk import campaigns from spreadsheet</div>
+              </div>
+            </li>
+            <li data-action="import-meta">
+              <span class="create-menu-icon meta-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#1877f2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18c2-8 5-12 8-12s4 4 6 12"/><path d="M3 18c2 0 3-2 5-6"/><path d="M21 18c-2 0-3-2-5-6"/></svg>
+              </span>
+              <div class="create-menu-text">
+                <div class="create-menu-title">Import from Meta</div>
+                <div class="create-menu-sub">Migrate campaigns &amp; assets from Meta Ads</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Phase one workflow scenes: Preflight / Midflight -->
+      <div class="workflow-row phase-one-row" data-role="workflow-row">
+        <button class="preset preset-workflow phase-one-card" data-preset="phase1Preflight" data-default-scenario="metaMigration">
+          <div class="wfl-accent"></div>
+          <div class="wfl-header">
+            <div class="wfl-title-row">
+              <span class="wfl-icon wfl-icon-setup" aria-hidden="true">
+                <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h10v10H3z"/><path d="M5.5 8h5"/><path d="M8 5.5v5"/></svg>
+              </span>
+              <span class="wfl-title">投前</span>
+            </div>
+            <span class="wfl-sub">跨媒体资产迁移、批量创编，并自动沉淀 campaign label</span>
+          </div>
+          <div class="wfl-focus-label">主场景</div>
+          <div class="wfl-summary" data-role="wfl-summary">
+            <span class="wfl-scenario is-hot" data-scenario="metaMigration"><span>跨媒体迁移</span><strong>Meta assets → TikTok</strong></span>
+            <span class="wfl-scenario" data-scenario="bulkCreation"><span>批量创编</span><strong>Bulk import / duplicate</strong></span>
+          </div>
+        </button>
+
+        <button class="preset preset-workflow phase-one-card active" data-preset="phase1Midflight" data-default-scenario="anomalyMonitor">
+          <div class="wfl-accent"></div>
+          <div class="wfl-header">
+            <div class="wfl-title-row">
+              <span class="wfl-icon wfl-icon-midflight" aria-hidden="true">
+                <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 8h3l2-5 3 10 2-5h3"/></svg>
+              </span>
+              <span class="wfl-title">投中</span>
+            </div>
+            <span class="wfl-sub">基于异常状态和投前 label 快速筛选、盯盘和出报告</span>
+          </div>
+          <div class="wfl-focus-label">主场景</div>
+          <div class="wfl-summary" data-role="wfl-summary">
+            <span class="wfl-scenario is-critical" data-scenario="anomalyMonitor"><span>异常监控</span><strong>3 rejected / 5 insufficient</strong></span>
+            <span class="wfl-scenario" data-scenario="dailyReport"><span>Daily report</span><strong>Label-based report</strong></span>
+          </div>
+        </button>
+      </div>
+
+      <!-- Search + filters 已迁至 tab-row 中段 -->
+
+      <!-- AI Summary 模块：仅在 Black Friday promotions 预设下显示 -->
+      <section class="ai-summary" data-role="ai-summary" style="display:none;">
+        <div class="ai-summary-head" data-role="ai-summary-toggle">
+          <div class="ai-summary-left-wrap">
+            <span class="ai-summary-toggle-icon" data-role="ai-summary-toggle-icon">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+            </span>
+            <div class="ai-summary-title-wrap">
+              <span class="ai-summary-badge-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.4 5.6L20 11l-5.6 2.4L12 19l-2.4-5.6L4 11l5.6-2.4z"/></svg>
+              </span>
+              <div class="ai-summary-text-wrap">
+                <div class="ai-summary-title" data-role="ai-title">Black Friday Promotions</div>
+                <div class="ai-summary-desc" data-role="ai-desc">—</div>
+              </div>
+            </div>
+          </div>
+          <button class="ai-summary-report-btn" data-role="ai-view-report" type="button">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 3h7v7"/><path d="M21 3L10 14"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+            View full report
+          </button>
+        </div>
+
+        <div class="ai-summary-grid">
+          <!-- Metric 1：Impressions 汇总 -->
+          <div class="ai-metric">
+            <div class="ai-metric-label">Impressions</div>
+            <div class="ai-metric-value-row">
+              <span class="ai-metric-value" data-role="ai-imp-value">—</span>
+              <span class="ai-metric-unit">views</span>
+            </div>
+            <div class="ai-metric-delta down" data-role="ai-imp-delta">
+              <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+              <span data-role="ai-imp-delta-val">2%</span>
+              <svg class="ai-spark" viewBox="0 0 80 20" width="80" height="18" fill="none" preserveAspectRatio="none">
+                <path d="M4 8 C 14 9, 22 8, 28 10 S 40 11, 46 10 S 58 13, 64 12 S 74 14, 78 15 L 78 18 L 4 18 Z"
+                      fill="#c7d2fe" fill-opacity="0.55" stroke="none"/>
+                <path d="M0 8 L4 8" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+                <path d="M4 8 C 14 9, 22 8, 28 10 S 40 11, 46 10 S 58 13, 64 12 S 74 14, 78 15"
+                      stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </div>
+            <div class="ai-metric-desc" data-role="ai-imp-desc">Impressions on Black Friday campaigns are pacing within expectation. Continue monitoring daily volume through the promo window.</div>
+            <div class="ai-metric-foot"></div>
+          </div>
+
+          <!-- Metric 2：Conversions 汇总 -->
+          <div class="ai-metric">
+            <div class="ai-metric-label">Conversions</div>
+            <div class="ai-metric-value-row">
+              <span class="ai-metric-value" data-role="ai-conv-value">—</span>
+            </div>
+            <div class="ai-metric-delta up" data-role="ai-conv-delta">
+              <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+              <span data-role="ai-conv-delta-val">25%</span>
+              <svg class="ai-spark" viewBox="0 0 80 20" width="80" height="18" fill="none" preserveAspectRatio="none">
+                <path d="M4 14 C 14 13, 22 14, 28 11 S 40 9, 46 10 S 58 7, 64 6 S 74 5, 78 4 L 78 18 L 4 18 Z"
+                      fill="#c7d2fe" fill-opacity="0.55" stroke="none"/>
+                <path d="M0 14 L4 14" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+                <path d="M4 14 C 14 13, 22 14, 28 11 S 40 9, 46 10 S 58 7, 64 6 S 74 5, 78 4"
+                      stroke="#6366f1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </div>
+            <div class="ai-metric-desc" data-role="ai-conv-desc">
+              Conversions are trending up on promo-heavy ads such as <a class="ai-metric-link" href="#" data-role="ai-conv-ad">BF_Flash_30s_v2.</a>
+              Consider shifting more budget toward top converters this week.
+            </div>
+            <div class="ai-metric-foot"></div>
+          </div>
+
+          <!-- Metric 3：Top performing creatives -->
+          <div class="ai-metric ai-creatives">
+            <div class="ai-metric-label">Top performing creatives</div>
+            <div class="ai-thumb-row" data-role="ai-top-creatives"></div>
+          </div>
+
+          <!-- Metric 4：Best performing products -->
+          <div class="ai-metric ai-creatives">
+            <div class="ai-metric-label">
+              Best performing products
+            </div>
+            <div class="ai-thumb-row" data-role="ai-best-products"></div>
+          </div>
+        </div>
+
+        <!-- AIGC 专属网格：仅 aigc preset 下显示，由 updateAISummary() 控制 display -->
+        <div class="ai-summary-grid ai-summary-grid--aigc" data-role="ai-aigc-grid" style="display:none;">
+          <!-- AIGC vs 非 AIGC 视频互动对比 -->
+          <div class="ai-metric ai-aigc-compare">
+            <div class="ai-metric-label">Video engagement · AIGC vs Non-AIGC</div>
+            <div class="aigc-compare-list" data-role="aigc-compare-list">
+              <!-- JS 注入：VTR / Hook rate / Avg watch / 完播率 4 行对比柱 -->
+            </div>
+          </div>
+
+          <!-- AIGC 视频互动汇总 -->
+          <div class="ai-metric">
+            <div class="ai-metric-label">AIGC views · 7d</div>
+            <div class="ai-metric-value-row">
+              <span class="ai-metric-value" data-role="aigc-views-value">—</span>
+              <span class="ai-metric-unit">video views</span>
+            </div>
+            <div class="ai-metric-delta up">
+              <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+              <span data-role="aigc-views-delta">+0%</span>
+              <svg class="ai-spark" viewBox="0 0 80 20" width="80" height="18" data-role="aigc-views-spark" preserveAspectRatio="none"></svg>
+            </div>
+            <div class="ai-metric-desc" data-role="aigc-views-desc">AIGC creatives are driving stronger watch-through this week. Worth scaling winning hooks into more variants.</div>
+            <div class="ai-metric-foot"></div>
+          </div>
+
+          <!-- Top performing AIGC creatives -->
+          <div class="ai-metric ai-creatives">
+            <div class="ai-metric-label">Top performing AIGC creatives</div>
+            <div class="ai-thumb-row" data-role="ai-top-aigc"></div>
+          </div>
+
+          <!-- AIGC 内容方向分布 -->
+          <div class="ai-metric">
+            <div class="ai-metric-label">Top content directions</div>
+            <div class="aigc-direction-list" data-role="aigc-direction-list"></div>
+          </div>
+        </div>
+
+        <!-- Creative Testing 专属网格：仅 creativetest preset 下显示 -->
+        <div class="ai-summary-grid ai-summary-grid--ct" data-role="ai-ct-grid" style="display:none;">
+          <!-- 测试漏斗：Pending / Testing / Winner / Loser -->
+          <div class="ai-metric ai-ct-funnel">
+            <div class="ai-metric-label">Test pipeline · last 14d</div>
+            <div class="ct-funnel" data-role="ct-funnel"></div>
+          </div>
+
+          <!-- 关键指标 KPI -->
+          <div class="ai-metric">
+            <div class="ai-metric-label">Average lift of winners</div>
+            <div class="ai-metric-value-row">
+              <span class="ai-metric-value" data-role="ct-lift-value">+0%</span>
+              <span class="ai-metric-unit">CTR vs control</span>
+            </div>
+            <div class="ai-metric-delta up">
+              <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+              <span data-role="ct-velocity">0 winners / week</span>
+              <svg class="ai-spark" viewBox="0 0 80 20" width="80" height="18" data-role="ct-velocity-spark" preserveAspectRatio="none"></svg>
+            </div>
+            <div class="ai-metric-desc" data-role="ct-lift-desc">Winners are outperforming the control group on CTR. Lock them in and pause the laggards to free budget.</div>
+            <div class="ai-metric-foot"></div>
+          </div>
+
+          <!-- 测试组明细列表（点击行将聚焦到该 campaign）-->
+          <div class="ai-metric ai-ct-tests">
+            <div class="ai-metric-label">Tests in progress</div>
+            <div class="ct-test-list" data-role="ct-test-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Toolkit strip: 横铺工具集，介于搜索栏和 tab/表格之间 -->
+      <div class="toolkit-strip" data-role="toolkit-strip">
+        <div class="ts-lead">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4.5 4.5 0 0 1 4 4 4.5 4.5 0 0 1-1.4 3.7L8 23l-7-7 9-9.3a4.5 4.5 0 0 1 4.7-1z"/></svg>
+          <span class="ts-lead-label" data-i18n="Toolkit">Toolkit</span>
+        </div>
+        <div class="ts-scroll" data-role="ts-scroll">
+          <!-- 工具按钮在 JS 中根据 ADAPT_TOOLKIT 动态渲染，More tools 按钮也在 JS 中内联 -->
+        </div>
+        <!-- Action bar：常驻在 toolkit-strip 右侧。Turn on / Turn off 仅在多选时显示 -->
+        <div class="ts-actionbar" data-role="ts-actionbar">
+          <span class="ts-actionbar-divider" aria-hidden="true"></span>
+          <button class="btn-secondary bulk-onoff ts-action-onoff is-disabled" data-role="bulk-on" data-multi-only="1" title="Select at least one row to enable" aria-disabled="true" disabled>
+            <span class="bulk-toggle-ico is-on" aria-hidden="true"><span class="bulk-toggle-dot"></span></span>
+            Turn on
+          </button>
+          <button class="btn-secondary bulk-onoff ts-action-onoff is-disabled" data-role="bulk-off" data-multi-only="1" title="Select at least one row to enable" aria-disabled="true" disabled>
+            <span class="bulk-toggle-ico" aria-hidden="true"><span class="bulk-toggle-dot"></span></span>
+            Turn off
+          </button>
+          <div class="bulk-edit-dropdown ts-action-bulkedit" data-role="bulk-edit-dropdown">
+            <button class="btn-secondary bulk-edit-trigger" data-role="bulk-edit-trigger" aria-haspopup="menu" aria-expanded="false">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 113 3L7 19l-4 1 1-4 12.5-12.5z"/></svg>
+              Bulk edit
+              <svg class="bulk-edit-caret" viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <ul class="bulk-edit-menu" data-role="bulk-edit-menu" role="menu" hidden>
+              <li role="menuitem" data-action="edit-budget">Edit budget</li>
+              <li role="menuitem" data-action="edit-bid">Edit bid</li>
+              <li role="menuitem" data-action="edit-name">Edit name</li>
+              <li role="menuitem" data-action="edit-po">Edit PO number</li>
+            </ul>
+          </div>
+          <div class="bulk-edit-dropdown ts-action-creative-supply" data-role="creative-supply-dropdown">
+            <button class="btn-secondary bulk-edit-trigger" data-role="creative-supply-trigger" aria-haspopup="menu" aria-expanded="false">
+              Creative supply
+              <svg class="bulk-edit-caret" viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <ul class="bulk-edit-menu" data-role="creative-supply-menu" role="menu" hidden>
+              <li role="menuitem" data-action="content-suite">
+                <span class="cs-menu-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+                </span>
+                <span class="cs-menu-text">
+                  <span class="cs-menu-title">Content suite</span>
+                  <span class="cs-menu-sub">Pull from your shared creative library</span>
+                </span>
+              </li>
+              <li role="menuitem" data-action="upload">
+                <span class="cs-menu-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg>
+                </span>
+                <span class="cs-menu-text">
+                  <span class="cs-menu-title">Upload</span>
+                  <span class="cs-menu-sub">Add new video / image from this device</span>
+                </span>
+              </li>
+              <li role="menuitem" data-action="aigc">
+                <span class="cs-menu-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8z"/><path d="M19 14l.9 2.1L22 17l-2.1.9L19 20l-.9-2.1L16 17l2.1-.9z"/></svg>
+                </span>
+                <span class="cs-menu-text">
+                  <span class="cs-menu-title">AIGC</span>
+                  <span class="cs-menu-sub">Generate fresh creatives with AI</span>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <button class="btn-secondary ts-action-btn" data-role="bulk-duplicate" title="Duplicate selected items into editable drafts">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
+            Duplicate
+          </button>
+          <!-- 兼容隐藏元素：保留 paste / find-replace / toolkit / clear 占位，避免 JS 旧引用报错 -->
+          <span class="ts-actionbar-compat" hidden>
+            <span data-role="bulk-count">0</span>
+            <button data-role="bulk-clear" type="button"></button>
+            <button data-role="bulk-paste"><span data-role="bulk-paste-count"></span></button>
+            <button data-role="bulk-find-replace" type="button"></button>
+            <button data-role="bulk-toolkit" type="button"></button>
+            <span data-role="bulk-bar"></span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Tabs + actions -->
+      <div class="tab-row">
+        <div class="tabs">
+          <button class="tab active" data-level="campaign">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M4 9h16"/></svg>
+            Campaigns
+          </button>
+          <button class="tab" data-level="adgroup">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="5" width="16" height="14" rx="2"/><path d="M8 9h8M8 13h8"/></svg>
+            Ad groups
+          </button>
+          <button class="tab" data-level="ad">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+            Ads
+          </button>
+        </div>
+
+        <!-- Bulk Action Bar 已迁至 toolkit-strip 右侧；此处仅保留占位（兼容旧引用） -->
+
+        <!-- Search + filters：从顶部迁移到 tab-row 中段 -->
+        <div class="filter-row filter-row--inline">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            <input data-role="search-input" placeholder="Search & filter (/) | Tips: Metric filters are available in table header" />
+            <button class="search-clear" data-role="search-clear" title="Clear" style="display:none;">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+            </button>
+          </div>
+          <button class="date-range">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 9h18M8 3v4M16 3v4"/></svg>
+            <span>Mar 12, 2026 - Mar 19, 2026</span>
+          </button>
+          <button class="select-box">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+            <div class="select-txt"><span class="sel-title">Columns:</span><span class="sel-sub">Community interaction</span></div>
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <button class="select-box">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h16v4H4zM4 15h16v4H4z"/></svg>
+            <div class="select-txt"><span class="sel-title">Breakdown:</span><span class="sel-sub">None</span></div>
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+        </div>
+
+        <div class="tab-actions">
+          <button class="link-btn">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg>
+            View report
+          </button>
+          <button class="link-btn">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M5 21h14"/></svg>
+            Export
+            <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <button class="link-btn more-btn">···</button>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <div class="table-wrap" data-role="table-wrap">
+        <div class="table-head-wrap" data-role="table-head-wrap">
+          <table class="campaign-table ct-head">
+            <colgroup data-role="colgroup-head">
+              <col data-col="check" />
+              <col data-col="switch" />
+              <col data-col="name" />
+              <col data-col="status" />
+              <col data-col="label" />
+              <col data-col="cost" />
+              <col data-col="impr" />
+              <col data-col="cpm" />
+              <col data-col="clicks" />
+              <col data-col="ctr" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th class="col-check"><input type="checkbox" id="checkAll" /></th>
+                <th class="col-switch">On/off<span class="col-resize" data-col-idx="1"></span></th>
+                <th class="col-name">Name<span class="col-resize" data-col-idx="2"></span></th>
+                <th class="col-status">Status & Action<span class="col-resize" data-col-idx="3"></span></th>
+                <th class="col-label">Label<span class="col-resize" data-col-idx="4"></span></th>
+                <th class="num">Cost<span class="col-resize" data-col-idx="5"></span></th>
+                <th class="num">Impressions<span class="col-resize" data-col-idx="6"></span></th>
+                <th class="num">CPM<span class="col-resize" data-col-idx="7"></span></th>
+                <th class="num">Clicks<br/><span class="th-sub">(destination)</span><span class="col-resize" data-col-idx="8"></span></th>
+                <th class="num">CTR<br/><span class="th-sub">(destination)</span></th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="table-body-wrap" data-role="table-body-wrap">
+          <table class="campaign-table ct-body">
+            <colgroup data-role="colgroup-body">
+              <col data-col="check" />
+              <col data-col="switch" />
+              <col data-col="name" />
+              <col data-col="status" />
+              <col data-col="label" />
+              <col data-col="cost" />
+              <col data-col="impr" />
+              <col data-col="cpm" />
+              <col data-col="clicks" />
+              <col data-col="ctr" />
+            </colgroup>
+            <tbody>
+              <tr class="draft-row">
+                <td colspan="10">
+                  <span class="caret">▶</span>
+                  You have 101 draft campaigns
+                </td>
+              </tr>
+              <!-- Repeated rows -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+      </div><!-- /.main-scroll -->
+
+      <div class="main-footer">
+      <!-- Footer -->
+      <div class="table-footer-wrap" data-role="table-footer-wrap">
+        <table class="campaign-table ct-footer">
+          <colgroup data-role="colgroup-footer">
+            <col data-col="check" />
+            <col data-col="switch" />
+            <col data-col="name" />
+            <col data-col="status" />
+            <col data-col="label" />
+            <col data-col="cost" />
+            <col data-col="impr" />
+            <col data-col="cpm" />
+            <col data-col="clicks" />
+            <col data-col="ctr" />
+          </colgroup>
+          <tbody>
+            <tr class="footer-row">
+              <td class="footer-total" colspan="4">Total of 106 campaigns <span class="q">?</span></td>
+              <td></td>
+              <td class="num">12,300.09 USD</td>
+              <td class="num">78,906</td>
+              <td class="num">1,934.68 USD</td>
+              <td class="num">3,897</td>
+              <td class="num">45,879</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination">
+        <div class="pg-info" data-role="pg-info"></div>
+        <div class="pg-buttons" data-role="pg-buttons"></div>
+        <div class="page-size" data-role="page-size">
+          <span data-role="page-size-label">50/page</span>
+          <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          <ul class="page-size-menu" data-role="page-size-menu">
+            <li data-value="20">20/page</li>
+            <li data-value="50" class="selected">50/page</li>
+            <li data-value="100">100/page</li>
+            <li data-value="200">200/page</li>
+          </ul>
+        </div>
+      </div>
+      </div><!-- /.main-footer -->
+
+      <!-- Floating help -->
+      <button class="fab" title="Help">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .8-1 1.7"/><circle cx="12" cy="17" r=".8" fill="currentColor"/></svg>
+      </button>
+    </main>
+  </div>
+
+  <!-- Modal Root -->
+  <div class="modal-root" data-role="modal-root"></div>
+
+  <!-- Drawer Root (Import from Meta) -->
+  <div class="drawer-root" data-role="drawer-root"></div>
+
+  <script src="script.js"></script>
+</div>
+</body>
+</html>
