@@ -6861,8 +6861,7 @@ tr.row-just-updated > td {
     transform .32s cubic-bezier(.2,.8,.2,1),
     margin-top .36s cubic-bezier(.2,.8,.2,1);
 }
-.phase-one-row:not([data-active-workflow]):hover .phase-one-card,
-.phase-one-row:not([data-active-workflow]):focus-within .phase-one-card {
+.phase-one-row:not([data-active-workflow]):hover .phase-one-card {
   height: 166px;
   min-height: 166px;
   padding: 16px 16px 14px;
@@ -6874,25 +6873,20 @@ tr.row-just-updated > td {
 .phase-one-row:not([data-active-workflow]) .phase-one-card:hover {
   transform: translateY(-1px);
 }
-.phase-one-row:not([data-active-workflow]):hover .phase-one-card .wfl-header,
-.phase-one-row:not([data-active-workflow]):focus-within .phase-one-card .wfl-header {
+.phase-one-row:not([data-active-workflow]):hover .phase-one-card .wfl-header {
   transform: translateY(-1px);
 }
 .phase-one-row:not([data-active-workflow]):hover .phase-one-card .wfl-focus-label,
-.phase-one-row:not([data-active-workflow]):hover .phase-one-card .wfl-summary,
-.phase-one-row:not([data-active-workflow]):focus-within .phase-one-card .wfl-focus-label,
-.phase-one-row:not([data-active-workflow]):focus-within .phase-one-card .wfl-summary {
+.phase-one-row:not([data-active-workflow]):hover .phase-one-card .wfl-summary {
   max-height: 84px;
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
-.phase-one-row:not([data-active-workflow]):hover .phase-one-card .wfl-focus-label,
-.phase-one-row:not([data-active-workflow]):focus-within .phase-one-card .wfl-focus-label {
+.phase-one-row:not([data-active-workflow]):hover .phase-one-card .wfl-focus-label {
   margin-top: 4px;
 }
-.phase-one-row:not([data-active-workflow]):hover .phase-one-card .wfl-summary,
-.phase-one-row:not([data-active-workflow]):focus-within .phase-one-card .wfl-summary {
+.phase-one-row:not([data-active-workflow]):hover .phase-one-card .wfl-summary {
   margin-top: 8px;
 }
 .phase-one-row[data-active-workflow="phase1Preflight"] {
@@ -7359,8 +7353,7 @@ tr.row-just-updated > td {
   height: 98px;
   min-height: 98px;
 }
-.phase-one-row:not([data-active-workflow]):hover .phase-one-card,
-.phase-one-row:not([data-active-workflow]):focus-within .phase-one-card {
+.phase-one-row:not([data-active-workflow]):hover .phase-one-card {
   height: auto;
   min-height: 188px;
   border-color: #cfd8e6;
@@ -7370,13 +7363,10 @@ tr.row-just-updated > td {
   transform: translateY(-1px);
 }
 .phase-one-row:not([data-active-workflow]):hover .phase-one-card .wfl-focus-label,
-.phase-one-row:not([data-active-workflow]):hover .phase-one-card .wfl-summary,
-.phase-one-row:not([data-active-workflow]):focus-within .phase-one-card .wfl-focus-label,
-.phase-one-row:not([data-active-workflow]):focus-within .phase-one-card .wfl-summary {
+.phase-one-row:not([data-active-workflow]):hover .phase-one-card .wfl-summary {
   max-height: 112px;
 }
-.phase-one-row:not([data-active-workflow]):hover .phase-one-card,
-.phase-one-row:not([data-active-workflow]):focus-within .phase-one-card {
+.phase-one-row:not([data-active-workflow]):hover .phase-one-card {
   overflow: visible;
 }
 .phase-one-row .wfl-focus-label {

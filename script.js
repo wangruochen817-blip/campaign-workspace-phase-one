@@ -649,7 +649,7 @@
     });
   }
   attachCreativeTestContext();
-  let aiSummaryCollapsed = false;
+  let aiSummaryCollapsed = true;
   let currentPreset = 'phase1Midflight';
   let currentScenario = 'anomalyMonitor';
   let currentPhaseOneReport = 'phase1MetaImported';
