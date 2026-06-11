@@ -4242,6 +4242,20 @@
     else delete row.dataset.activeWorkflow;
   }
 
+  function initPhaseOneHoverGate() {
+    const row = document.querySelector('.phase-one-row');
+    if (!row) return;
+    row.classList.add('is-hover-locked');
+    const unlockHover = () => row.classList.remove('is-hover-locked');
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        if (!row.matches(':hover')) unlockHover();
+      });
+    });
+    row.addEventListener('pointerleave', unlockHover, { once: true });
+    row.addEventListener('mouseleave', unlockHover, { once: true });
+  }
+
   function getPhaseOneContext() {
     if (PHASE_ONE_WORKFLOWS[currentPreset]) {
       const workflow = PHASE_ONE_WORKFLOWS[currentPreset];
@@ -9175,6 +9189,7 @@
     });
   }
 
+  initPhaseOneHoverGate();
   applyFilter('phase1Midflight');
   initPresetOverflow();
 
